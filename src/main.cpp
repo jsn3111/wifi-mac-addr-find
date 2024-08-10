@@ -92,6 +92,7 @@ void OnDataRecv(const uint8_t *mac, const uint8_t *data, int len) {
   for(int i = 0; i < len; i++) {
     text += (char)data[i];
   }
+  Serial.print(len);
   Serial.println(text);
 }
 
